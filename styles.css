@@ -30,8 +30,6 @@ body {
   height: 350px;
 }
 
-
-
 #hero h1 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -80,12 +78,3 @@ footer {
   width: 100%;
 }
 
-.button{
-  background-color: #343a40;
-  color: #ffffff;
-  text-align: center;
-  padding: 1rem 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
