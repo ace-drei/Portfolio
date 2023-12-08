@@ -6,13 +6,14 @@ body {
 #hero {
   position: relative;
   z-index: 2;
-  background-color: #007bff; /* Example background color, adjust as needed */
+  background-color: black; /* Example background color, adjust as needed */
   color: whitesmoke;
 }
 
 #hero img {
   width: 200px; /* Adjust width as needed */
   height: 200px; /* Adjust height as needed */
+  z-index: 2;
 }
 
 /* Custom Styles for Particles.js Background */
@@ -22,9 +23,19 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-z-index: 1; /* Ensures it is below the hero content */
+z-index: -1; /* Ensures it is below the hero content */
 pointer-events: none; /* Allows clicking through the canvas */
 }
+
+#particles-js2 {
+  position: absolute; /* Positions particles.js background absolutely */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Ensures it is below the hero content */
+  pointer-events: none; /* Allows clicking through the canvas */
+  }
 
 /* Ensuring the canvas fills the container */
 .particles-js-canvas-el {
