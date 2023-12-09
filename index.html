@@ -554,20 +554,67 @@
 
 
 
+<!-- Interests Section -->
+<section id="interests" class="py-5 bg-light">
+    <div id="particles-js"></div>
+    <div class="container">
+        <h1 class="text-center">Explore My World</h1>
 
-    <!-- Interests Section -->
-    <section id="interests" class="py-5 bg-light">
-        <div id="particles-js"></div>
-        <div class="container">
-            <h1 class="text-center">Awards and Interests</h1>
-            <h2>INTERESTS</h2>
-            <p>Leetcode, developing side projects, socialising with friends.</p>
-
-           <h2> Achievements</h2>
-        </p>Winner of the Best Future Solution at TUH Health Hackathon. </p>
-
+        <!-- Interests -->
+        <div class="interests-section">
+            <h2>Interests</h2>
+            <p>Embarking on coding adventures at LeetCode, crafting innovative side projects, and enjoying lively social gatherings with friends.</p>
         </div>
-    </section>
+
+        <!-- Achievements -->
+        <div class="achievements-section">
+            <h2>Achievements</h2>
+            <p>🏆 Winner of the <b>Best Future Solution</b> at the TUH Health Hackathon. <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#hackathonModal">More Info</button></p>
+        </div>
+
+    </div>
+
+<!-- Hackathon Modal -->
+<div class="modal fade" id="hackathonModal" tabindex="-1" role="dialog" aria-labelledby="hackathonModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="hackathonModalLabel">TUH Health Hackathon</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>As the event began, I met with my team of four fellow 4th-year students. Together we went to the talk where we were given the schedule. 
+                    We were tasked to create a real-time translation app. The experience was nothing short of incredible. From the inspiring opening remarks by Keith Quille 
+                    that set the tone for the event, to the CFO of Tallaght University Hospital, who provided valuable insights into healthcare needs, and the knowledgeable AWS experts who 
+                    generously shared their wisdom on AWS technologies, it was a whirlwind of learning and innovation.</p>
+                    
+                <!-- Image 1 -->
+                <img src="pictures/award.jpg" alt="Hackathon Image 1" class="img-fluid mb-3" style="max-width: 100%; height: auto;">
+
+                <p>We spent an entire night immersed in coding, with my primary role being the 
+                    development of the app's front end and website. As dawn broke, the hard work and dedication paid off when our team was honoured with the prestigious "Best Future Solution Health Hackathon 2023" 
+                    award, making the experience even more rewarding and unforgettable.</p>
+
+                <!-- Image 2 -->
+                <img src="pictures/group.jpg" alt="Hackathon Image 2" class="img-fluid" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
 
     <!-- Contact Modal -->
     <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
@@ -598,6 +645,43 @@
             });
         });
     </script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Get the current hash value (section ID) from the URL
+        var currentHash = window.location.hash;
+
+        // Highlight the corresponding nav item on page load
+        if (currentHash !== '') {
+            $('a[href="' + currentHash + '"]').parent().addClass('active');
+        }
+
+        // Highlight the nav item when clicking on a link
+        $('.navbar-nav a').on('click', function () {
+            $('.navbar-nav li').removeClass('active clicked');
+            $(this).parent().addClass('active clicked');
+        });
+
+        // Highlight the nav item when hovering over it
+        $('.navbar-nav a').hover(
+            function () {
+                $(this).parent().addClass('active');
+            },
+            function () {
+                // Remove the "active" class when leaving the hover
+                if (!$(this).parent().hasClass('clicked')) {
+                    $(this).parent().removeClass('active');
+                }
+            }
+        );
+    });
+</script>
+
+
+    
 
 
 </body>
