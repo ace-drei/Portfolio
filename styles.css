@@ -57,3 +57,18 @@ footer {
 .carousel-control-next-icon {
   filter: invert(100%); /* Invert the color of the icon */
 }
+
+/* Add this to your styles.css file */
+
+.table-container {
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.table {
+  width: 100%;
+}
+
+/* Initially hide the table */
+.invisible {
+  display: none;
+}

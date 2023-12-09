@@ -108,36 +108,117 @@
 <!-- Education Section -->
 <section id="education" class="py-5 bg-light">
     <div class="container">
-        <h1 class="text-center">Education</h1>
+        <h1 class="text-center"><b>Education</b></h1>
+        <hr class="my-4">
 
         <!-- Carousel for Education Slides -->
-        <div id="educationCarousel" class="carousel slide" data-ride="carousel">
+        <div id="educationCarousel" class="carousel slide text-center" data-interval="5000">
             <div class="carousel-inner">
+
                 <!-- Slide for Year 1 -->
                 <div class="carousel-item active text-center">
-                    <h2 style="">Year 1</h2>
-                    <p>BSc (Honours) in Computer Science and Information Technology</p>
-                    <p>TUD Class Ambassador</p>
-                    <!-- Add other content for Year 1 -->
+                    <h1>Year 1</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Semester 1</h2>
+                            <hr class="my-4">
+                            <p>Social Media Communications</p>
+                            <p>Database Fundamentals</p>
+                            <p>Operating Systems Fundamentals</p>
+                            <p>Statistics</p>
+                            <p>Software Development 2</p>
+                            <p>Object Oriented Systems Analysis</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Semester 2</h2>
+                            <hr class="my-4">
+                            <p>Computer Architecture</p>
+                            <p>Critical Skills Development</p>
+                            <p>Business & Information Systems</p>
+                            <p>Discrete Mathematics 1</p>
+                            <p>Software Development 1</p>
+                            <p>Visual Design & User Experience</p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Slide for Year 2 -->
-                <div class="carousel-item">
-                    <h2>Year 2</h2>
-                    <!-- Add content for Year 2 -->
+                <div class="carousel-item text-center">
+                    <h1>Year 2</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Semester 3</h2>
+                            <hr class="my-4">
+                            <p>Database Admin & Analysis	</p>
+                            <p>Management Science</p>
+                            <p>Routing & Switching Essentials	</p>
+                            <p>Project</p>
+                            <p>Information Security	</p>
+                            
+
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Semester 4</h2>
+                            <hr class="my-4">
+                            <p>Software Development 4</p>
+                            <p>Advanced Database Technologies</p>
+                            <p>Discrete Mathematics 2</p>
+                            <p>Network Fundamentals	</p>
+                            <p>Software Quality Assurance And Testing</p>
+                            <p>Software Development 3</p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Slide for Year 3 -->
-                <div class="carousel-item">
-                    <h2>Year 3</h2>
-                    <!-- Add content for Year 3 -->
+                <div class="carousel-item text-center">
+                    <h1>Year 3</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Semester 5</h2>
+                            <hr class="my-4">
+                           <p>Server-side Web Development	</p>
+                           <p>Operating Systems	</p>
+                           <p>Cloud Service & Distrib Comp</p>
+                           <p>Big Data Technologies	</p>
+                           <p>Data Structures & Algorithms</p>
+                           <p>Data Analysis	</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Semester 6</h2>
+                            <hr class="my-4">
+                           <p>Work Experience	</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Add more slides for additional years -->
+                <!-- Slide for Year 4 -->
+                <div class="carousel-item text-center">
+                    <h1>Year 4</h1>
+                    <hr class="my-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Semester 7</h2>
+                            <hr class="my-4">
+
+                            <p>4th Year Project	</p>
+                            <p>Enterprise App Development	</p>
+                            <p>Intermedia Design</p>
+                            <p>Development Operations	</p>
+                            <p>Information Management</p>
+                            <p>Enterprise Architecture</p>
+
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Semester 8</h2>
+                            <hr class="my-4">
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
-            <!-- Navigation Buttons -->
+            <!-- Navigation Buttons at the Bottom -->
             <a class="carousel-control-prev" href="#educationCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -149,6 +230,13 @@
         </div>
     </div>
 </section>
+
+
+
+
+
+
+
 
     <!-- Projects Section -->
     <section id="projects" class="py-5 text-black">
@@ -194,6 +282,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="JS/Home.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#educationCarousel').carousel({
+                interval: false // Set interval to false to prevent automatic sliding
+            });
+        });
+    </script>
 
 
 </body>
