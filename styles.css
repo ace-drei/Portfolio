@@ -1,6 +1,6 @@
 body {
   font-family: 'Arial', sans-serif;
-    background-color: rgb(207, 206, 206);;   
+    background-color: rgb(242, 237, 237);;   
 }
 
 .icon-container {
@@ -16,16 +16,17 @@ body {
 
 
 .project-card {
-  background-color: rgb(234, 232, 232); /* Set your desired grey color */
+  background-color: rgb(242, 237, 237) !important; /* Set your desired grey color */
 }
 
 
  #education{
-  background-color: rgb(207, 206, 206) !important;
+  background-color: rgb(242, 237, 237) !important;
  }
 
 #interests{
-  background-color:rgb(207, 206, 206) !important;
+  background-color:rgb(242, 237, 237)
+   !important;
 } 
 
 /* Hero Section Specific Styles */
@@ -97,3 +98,4 @@ footer {
 .project-box:hover {
   border-color: #007bff; /* Change border color on hover */
 }
+
