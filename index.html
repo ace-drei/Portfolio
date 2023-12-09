@@ -127,134 +127,6 @@
 </section>
 
 
-
-<!-- Education Section -->
-<section id="education" class="py-5 bg-light">
-    <div class="container">
-        <h1 class="text-center"><b>Education</b></h1>
-        <hr class="my-4">
-
-        <!-- Carousel for Education Slides -->
-        <div id="educationCarousel" class="carousel slide text-center" data-interval="5000">
-            <div class="carousel-inner">
-
-                <!-- Slide for Year 1 -->
-                <div class="carousel-item active text-center">
-                    <h1>Year 1</h1>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2>Semester 1</h2>
-                            <hr class="my-4">
-                            <p>Social Media Communications</p>
-                            <p>Database Fundamentals</p>
-                            <p>Operating Systems Fundamentals</p>
-                            <p>Statistics</p>
-                            <p>Software Development 2</p>
-                            <p>Object Oriented Systems Analysis</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h2>Semester 2</h2>
-                            <hr class="my-4">
-                            <p>Computer Architecture</p>
-                            <p>Critical Skills Development</p>
-                            <p>Business & Information Systems</p>
-                            <p>Discrete Mathematics 1</p>
-                            <p>Software Development 1</p>
-                            <p>Visual Design & User Experience</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide for Year 2 -->
-                <div class="carousel-item text-center">
-                    <h1>Year 2</h1>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2>Semester 3</h2>
-                            <hr class="my-4">
-                            <p>Database Admin & Analysis	</p>
-                            <p>Management Science</p>
-                            <p>Routing & Switching Essentials	</p>
-                            <p>Project</p>
-                            <p>Information Security	</p>
-                            
-
-                        </div>
-                        <div class="col-md-6">
-                            <h2>Semester 4</h2>
-                            <hr class="my-4">
-                            <p>Software Development 4</p>
-                            <p>Advanced Database Technologies</p>
-                            <p>Discrete Mathematics 2</p>
-                            <p>Network Fundamentals	</p>
-                            <p>Software Quality Assurance And Testing</p>
-                            <p>Software Development 3</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide for Year 3 -->
-                <div class="carousel-item text-center">
-                    <h1>Year 3</h1>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2>Semester 5</h2>
-                            <hr class="my-4">
-                           <p>Server-side Web Development	</p>
-                           <p>Operating Systems	</p>
-                           <p>Cloud Service & Distrib Comp</p>
-                           <p>Big Data Technologies	</p>
-                           <p>Data Structures & Algorithms</p>
-                           <p>Data Analysis	</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h2>Semester 6</h2>
-                            <hr class="my-4">
-                           <p>Work Experience	</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide for Year 4 -->
-                <div class="carousel-item text-center">
-                    <h1>Year 4</h1>
-                    <hr class="my-4">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2>Semester 7</h2>
-                            <hr class="my-4">
-
-                            <p>4th Year Project	</p>
-                            <p>Enterprise App Development	</p>
-                            <p>Intermedia Design</p>
-                            <p>Development Operations	</p>
-                            <p>Information Management</p>
-                            <p>Enterprise Architecture</p>
-
-                        </div>
-                        <div class="col-md-6">
-                            <h2>Semester 8</h2>
-                            <hr class="my-4">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Navigation Buttons at the Bottom -->
-            <a class="carousel-control-prev" href="#educationCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#educationCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
-</section>
-
-
 <!-- Projects Section -->
 <section id="projects" class="py-5 text-black">
     <div id="particles-js"></div>
@@ -265,56 +137,64 @@
         <div class="row">
             <!-- Project 1 -->
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
+                <div class="card h-100 project-card">
+                    <div class="card-body d-flex flex-column">
                         <h2>SAP Internship Project</h2>
-                        <p>Developed a versatile web application during my internship. 
+                        <p class="flex-grow-1">Developed a versatile web application during my internship. 
                             The application included a seat booking page for events, an integrated calendar page for scheduling, 
                             and a user profile section to highlight skills. </p>
-                        <p><b>Tech Stack:</b> PHP, XAMPP, Ui5, Hana Cloud, Fiori.</p>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#projectModal1">Details</button>
+                        <div class="mt-auto">
+                            <p><b>Tech Stack:</b> PHP, XAMPP, Ui5, Hana Cloud, Fiori.</p>
+                            <button class="btn btn-dark mt-3" data-toggle="modal" data-target="#projectModal1">Details</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Project 2 -->
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
+                <div class="card h-100 project-card">
+                    <div class="card-body d-flex flex-column">
                         <h2>TUD Streaming Website</h2>
-                        <p>Developed a Netflix clone website with full streaming. </p>
-                        <p><b>Tech Stack:</b> JavaScript, NodeJs, JS, HTML, CSS </p>
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#projectModal2">Details</button>
+                        <p class="flex-grow-1">Developed a Netflix clone website with full streaming. </p>
+                        <div class="mt-auto">
+                            <p><b>Tech Stack:</b> JavaScript, NodeJs, JS, HTML, CSS </p>
+                            <button class="btn btn-dark mt-3" data-toggle="modal" data-target="#projectModal2">Details</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Project 3 -->
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
+                <div class="card h-100 project-card">
+                    <div class="card-body d-flex flex-column">
                         <h2>Bank Insurance Calculator</h2>
-                        <p>Bank Insurance calculator GUI</p>
-                        <p><b>Tech Stack:</b> Java, Stringboot</p>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#projectModal3">Details</button>
+                        <p class="flex-grow-1">Bank Insurance calculator GUI</p>
+                        <div class="mt-auto">
+                            <p><b>Tech Stack:</b> Java, Stringboot</p>
+                            <button class="btn btn-dark mt-3" data-toggle="modal" data-target="#projectModal3">Details</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Additional Projects (Initially Hidden) -->
-            <div class="col-md-4 mb-4 d-none" id="project4">
-                <div class="card">
-                    <div class="card-body">
+            <div class="col-md-4 mb-4 d-none project-card" id="project4">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
                         <h2>Python Snake game</h2>
-                        <p>Developing a python snake game from scratch.</p>
-                        <p><b>Tech Stack:</b> Python3</p>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#projectModal4">Details</button>
+                        <p class="flex-grow-1">Developing a python snake game from scratch.</p>
+                        <div class="mt-auto">
+                            <p><b>Tech Stack:</b> Python3</p>
+                            <button class="btn btn-dark mt-3" data-toggle="modal" data-target="#projectModal4">Details</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4 mb-4 d-none" id="project5">
-                <div class="card">
+            <div class="col-md-4 mb-4 d-none project-card" id="project5">
+                <div class="card h-100">
                     <div class="card-body">
                         <h2>Project 5</h2>
                         <p>Description of Project 5.</p>
@@ -323,8 +203,8 @@
                 </div>
             </div>
 
-            <div class="col-md-4 mb-4 d-none" id="project6">
-                <div class="card">
+            <div class="col-md-4 mb-4 d-none project-card" id="project6">
+                <div class="card h-100">
                     <div class="card-body">
                         <h2>Project 6</h2>
                         <p>Description of Project 6.</p>
@@ -337,7 +217,7 @@
 
         <!-- Show More/Less Button -->
         <div class="text-center mt-3">
-            <button class="btn btn-primary" id="showMoreBtn">Show More</button>
+            <button class="btn btn-dark mt-3" id="showMoreBtn">Show More</button>
         </div>
 
     </div>
@@ -526,18 +406,18 @@
 
 
 
-    <script>
-        // JavaScript to toggle visibility of additional projects and change button text
-        document.getElementById('showMoreBtn').addEventListener('click', function () {
-            document.getElementById('project4').classList.toggle('d-none');
-            document.getElementById('project5').classList.toggle('d-none');
-            document.getElementById('project6').classList.toggle('d-none');
-            
-            // Change button text based on visibility
-            var buttonText = document.getElementById('showMoreBtn').textContent;
-            document.getElementById('showMoreBtn').textContent = (buttonText === 'Show More') ? 'Show Less' : 'Show More';
-        });
-    </script>
+            <script>
+                // JavaScript to toggle visibility of additional projects and change button text
+                document.getElementById('showMoreBtn').addEventListener('click', function () {
+                    document.getElementById('project4').classList.toggle('d-none');
+                    document.getElementById('project5').classList.toggle('d-none');
+                    document.getElementById('project6').classList.toggle('d-none');
+                    
+                    // Change button text based on visibility
+                    var buttonText = document.getElementById('showMoreBtn').textContent;
+                    document.getElementById('showMoreBtn').textContent = (buttonText === 'Show More') ? 'Show Less' : 'Show More';
+                });
+            </script>
 
 </section>
 

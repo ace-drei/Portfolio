@@ -15,6 +15,11 @@ body {
 }
 
 
+.project-card {
+  background-color: rgb(234, 232, 232); /* Set your desired grey color */
+}
+
+
  #education{
   background-color: rgb(207, 206, 206) !important;
  }
