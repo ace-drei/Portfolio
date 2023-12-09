@@ -1,17 +1,7 @@
 body {
   font-family: 'Arial', sans-serif;
-   /* background-color: grey;   */
+    background-color: rgb(207, 206, 206);;   
 }
-
-
-/* #education{
-  background-color: grey !important;
-}
-#interests{
-  background-color: grey !important;
-} */
-
-/* Hero Section Specific Styles */
 
 .icon-container {
   display: flex;
@@ -23,6 +13,18 @@ body {
   text-align: center;
   margin: 10px;
 }
+
+
+ #education{
+  background-color: rgb(207, 206, 206) !important;
+ }
+
+#interests{
+  background-color:rgb(207, 206, 206) !important;
+} 
+
+/* Hero Section Specific Styles */
+
 
 #hero {
   position: relative;
@@ -79,17 +81,14 @@ footer {
   filter: invert(100%); /* Invert the color of the icon */
 }
 
-/* Add this to your styles.css file */
-
-.table-container {
-  margin-top: 20px; /* Adjust margin as needed */
+.project-box {
+  border: 2px solid #333; /* Border style and color */
+  padding: 20px; /* Padding inside the project box */
+  margin-bottom: 20px; /* Margin between project boxes */
+  cursor: pointer; /* Change cursor to pointer on hover for clickability */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
 }
 
-.table {
-  width: 100%;
-}
-
-/* Initially hide the table */
-.invisible {
-  display: none;
+.project-box:hover {
+  border-color: #007bff; /* Change border color on hover */
 }
