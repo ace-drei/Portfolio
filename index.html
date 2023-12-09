@@ -611,25 +611,67 @@
 
 
 
-
-
-
-
-
-    <!-- Contact Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <h1 class="text-center">Contact</h1>
-            <h1 class="text-center">Email</h1>
-            <h1 class="text-center">Phone</h1>
-            <h1 class="text-center">Address</h1>
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contact</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Contact Form -->
+                <form id="contactForm">
+                    <!-- Name Input -->
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
 
+                    <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
 
+                    <!-- Message Input -->
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
 </div>
+
+<script>
+    function submitForm() {
+        // Get form values
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        // Create a mailto link to open the user's email client
+        var mailtoLink = "mailto:aciobirca97@gmail.com" +
+            "?subject=" + encodeURIComponent("New Contact Form Submission") +
+            "&body=" + encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nMessage: " + message);
+
+        // Open the user's email client
+        window.location.href = mailtoLink;
+    }
+</script>
+
+
+
+
+
 
     <!-- Bootstrap and JavaScript scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
