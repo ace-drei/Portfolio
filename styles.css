@@ -1,8 +1,29 @@
 body {
   font-family: 'Arial', sans-serif;
+   /* background-color: grey;   */
 }
 
+
+/* #education{
+  background-color: grey !important;
+}
+#interests{
+  background-color: grey !important;
+} */
+
 /* Hero Section Specific Styles */
+
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.icon-item {
+  text-align: center;
+  margin: 10px;
+}
+
 #hero {
   position: relative;
   z-index: 2;
