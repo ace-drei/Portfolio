@@ -15,9 +15,10 @@ body {
 }
 
 
-.project-card {
-  background-color: rgb(242, 237, 237) !important; /* Set your desired grey color */
+.project-card, .additional-project-card {
+  background-color: rgb(242, 237, 237) !important; 
 }
+
 
 
  #education{
@@ -176,6 +177,10 @@ html, body {
   margin: 0 auto; /* Center the iframe within the container */
 }
 
-.work-experience {
-  background-color: rgb(255, 0, 0) !important; 
+.hidden-project {
+  display: none;
+}
+
+.visible-project {
+  display: block;
 }
